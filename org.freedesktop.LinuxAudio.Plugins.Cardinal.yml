@@ -26,7 +26,7 @@ modules:
       env:
         AR: gcc-ar
     build-commands:
-      - make PREFIX=${FLATPAK_DEST} SYSDEPS=true WITH_LTO=true -j $FLATPAK_BUILDER_N_JOBS
+      - make PREFIX=${FLATPAK_DEST} SYSDEPS=true WITH_LTO=false -j $FLATPAK_BUILDER_N_JOBS
       - make PREFIX=${FLATPAK_DEST} install
     post-install:
       - ln -s lib/lv2 ${FLATPAK_DEST}/lv2
@@ -37,8 +37,8 @@ modules:
         --origin=flatpak org.freedesktop.LinuxAudio.Plugins.Cardinal
     sources:
       - type: archive
-        url: https://github.com/DISTRHO/Cardinal/releases/download/22.12/cardinal-22.12.tar.xz
-        sha256: 15815e2f08efbfef4e54dc2e77a5c53b313b317ad7c8caf5dc162f00c7f33811
+        url: https://github.com/DISTRHO/Cardinal/releases/download/23.02/cardinal-23.02%2Bdeps.tar.xz
+        sha256: e6f1164e411720c1bfadeec4c7e60a87e1132c3b9cda78a14cfa584a0e4b751a
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DISTRHO/Cardinal/releases/latest

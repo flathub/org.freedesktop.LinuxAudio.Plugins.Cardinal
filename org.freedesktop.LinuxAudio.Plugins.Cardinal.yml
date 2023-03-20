@@ -20,6 +20,10 @@ modules:
       - type: archive
         url: https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
         sha256: fba956f27c6ae56ce6dfd52fbf9d20254aad42821f74fa52f83957625294afb9
+        x-checker-data:
+          type: anitya
+          project-id: 1417
+          url-template: https://github.com/akheron/jansson/releases/download/v$version/jansson-$version.tar.bz2
   - name: Cardinal
     buildsystem: simple
     build-options:
@@ -37,12 +41,12 @@ modules:
         --origin=flatpak org.freedesktop.LinuxAudio.Plugins.Cardinal
     sources:
       - type: archive
-        url: https://github.com/DISTRHO/Cardinal/releases/download/23.02/cardinal-23.02%2Bdeps.tar.xz
-        sha256: e6f1164e411720c1bfadeec4c7e60a87e1132c3b9cda78a14cfa584a0e4b751a
+        url: https://github.com/DISTRHO/Cardinal/releases/download/23.02/cardinal-23.02.tar.xz
+        sha256: ce6d7db3713195b887b219473ee46b76d58db3e4bc99d36f8f2be66f321b5e07
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DISTRHO/Cardinal/releases/latest
-          url-query: '[.assets[] | select(.name | test("cardinal-[0-9.]+\\."))] |
+          url-query: '[.assets[] | select(.name | test("cardinal-[0-9.]+\\.tar\\.xz"))] |
             first | .browser_download_url'
           version-query: .tag_name
       - type: file

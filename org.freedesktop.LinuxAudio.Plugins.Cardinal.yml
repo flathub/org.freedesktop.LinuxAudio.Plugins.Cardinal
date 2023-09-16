@@ -41,8 +41,8 @@ modules:
         --origin=flatpak org.freedesktop.LinuxAudio.Plugins.Cardinal
     sources:
       - type: archive
-        url: https://github.com/DISTRHO/Cardinal/releases/download/23.07/cardinal-23.07.tar.xz
-        sha256: c75c0d7cd054bbbcc7e8f998ba2e875db1b63f5c6aa9c463e942faeb5a357b99
+        url: https://github.com/DISTRHO/Cardinal/releases/download/23.09/cardinal-23.09.tar.xz
+        sha256: 93e1b48cd2c069832cb020d3af48c3bc0e03ea980594585db21ca4d77b1b2a0a
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DISTRHO/Cardinal/releases/latest

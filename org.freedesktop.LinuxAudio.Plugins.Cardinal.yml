@@ -29,6 +29,7 @@ modules:
     build-options:
       env:
         AR: gcc-ar
+    no-parallel-make: true
     build-commands:
       - make PREFIX=${FLATPAK_DEST} SYSDEPS=true WITH_LTO=false -j $FLATPAK_BUILDER_N_JOBS
       - make PREFIX=${FLATPAK_DEST} install

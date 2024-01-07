@@ -37,6 +37,7 @@ modules:
       - ln -s lib/lv2 ${FLATPAK_DEST}/lv2
       - ln -s lib/vst ${FLATPAK_DEST}/vst
       - ln -s lib/vst3 ${FLATPAK_DEST}/vst3
+      - ln -s lib/clap ${FLATPAK_DEST}/clap
       - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.Cardinal.metainfo.xml
       - appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.Cardinal --prefix=${FLATPAK_DEST}
         --origin=flatpak org.freedesktop.LinuxAudio.Plugins.Cardinal

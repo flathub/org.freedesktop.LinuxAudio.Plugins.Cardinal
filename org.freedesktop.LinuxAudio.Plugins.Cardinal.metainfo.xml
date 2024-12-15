@@ -8,8 +8,11 @@
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://github.com/DISTRHO/Cardinal/</url>
   <releases>
-    <release version="24.09" date="2024-09-24">
+    <release version="24.12" date="2024-12-15">
       <description></description>
+    </release>
+    <release version="24.09" date="2024-09-24">
+      <description/>
     </release>
     <release version="24.05" date="2024-05-25">
       <description/>

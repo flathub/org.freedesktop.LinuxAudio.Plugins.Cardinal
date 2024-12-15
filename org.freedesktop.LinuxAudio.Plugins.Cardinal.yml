@@ -40,8 +40,8 @@ modules:
       - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.Cardinal.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/DISTRHO/Cardinal/releases/download/24.09/cardinal-24.09.tar.xz
-        sha256: d0dcbe623e77634b6a2f87827b3196c394863f75a09cf1b38082622afb75a038
+        url: https://github.com/DISTRHO/Cardinal/releases/download/24.12/cardinal-24.12.tar.xz
+        sha256: 28195ddb501c9f0b72625960a35874b28679533b4e9611f77a5e7c0a8aaf88a4
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DISTRHO/Cardinal/releases/latest

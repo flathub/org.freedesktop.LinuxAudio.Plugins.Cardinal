@@ -18,8 +18,8 @@ modules:
       - '*'
     sources:
       - type: archive
-        url: https://github.com/akheron/jansson/releases/download/v2.15.0/jansson-2.15.0.tar.bz2
-        sha256: a7eac7765000373165f9373eb748be039c10b2efc00be9af3467ec92357d8954
+        url: https://github.com/akheron/jansson/releases/download/v2.15.1/jansson-2.15.1.tar.bz2
+        sha256: f9aa4b3ec8496fee69db94f06f3d76fd4a26b012ee9bf1e917078c2cd2841881
         x-checker-data:
           type: anitya
           project-id: 1417
@@ -41,8 +41,8 @@ modules:
       - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.Cardinal.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/DISTRHO/Cardinal/releases/download/26.01/cardinal-26.01.tar.xz
-        sha256: aa5d170ff13144a7e9b91dbedb0e5572fad79c251ff216632b1ca2154ce3d79b
+        url: https://github.com/DISTRHO/Cardinal/releases/download/26.02/cardinal-26.02.tar.xz
+        sha256: 340b2fc000850b3c749d2b41f3e4cf1e330bbe8625fb599cc791d8e41f986a53
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DISTRHO/Cardinal/releases/latest
